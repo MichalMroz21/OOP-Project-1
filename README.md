@@ -11,26 +11,22 @@ It is a virtual world turn based simulation, where different organisms - (plants
 After starting the app user can specify board size.
 
 
-<h4>Each tile has assigned a color which denotes what organism is currently on it. Detailed description of each organism is below.</h3>
-Red - Borscht - Strength: 10 <br/>
-Orange - Antelope - Strength: 4, Initiative: 4 <br/>
-Magenta - Berries - Strength: 99 <br/>
-Green - Grass - Strength: 0 <br/>
-Dark Blue - Fox - Strength: 3, Initiative: 7<br/>
-Black - Wolf - Strength: 9, Initiative: 5<br/>
-Pink - Human - Strength: 5, Initiative: 4<br/>
-Light Gray - Dandelion - Strength: 0<br/>
-Light Blue - Turtle - Strength: 2, Initiative: 1<br/>
-Gray - Guarana - Strength: 0<br/>
-Dark Grey - Sheep - Strength: 4, Initiative: 4<br/>
+<h4>Each tile has assigned an ASCII character which denotes what organism is currently on it. Detailed description of each organism is below.</h3>
+'B' - Borscht - Strength: 10 <br/>
+'A' - Antelope - Strength: 4, Initiative: 4 <br/>
+'J' - Berries - Strength: 99 <br/>
+'T' - Grass - Strength: 0 <br/>
+'L' - Fox - Strength: 3, Initiative: 7<br/>
+'W' - Wolf - Strength: 9, Initiative: 5<br/>
+'C' - Human - Strength: 5, Initiative: 4<br/>
+'M' - Dandelion - Strength: 0<br/>
+'Z' - Turtle - Strength: 2, Initiative: 1<br/>
+'G' - Guarana - Strength: 0<br/>
+'O' - Sheep - Strength: 4, Initiative: 4<br/>
 
 All plants have initiative = 0.
 
 Whenever a new turn is started some organisms move randomly (animals), some don't move (plants), in case of collision a stronger organism wins by killing a weaker one or driving it away from tile. Order of moves depends on initiative (in case of same initiative life-time is considered). In case of equal strength, the organism which attacked first wins. Human is an exception in terms of movement - direction of movement has to be chosen before the turn (up, down, left, right) using arrows. Also animals can eat plants.
-
-<h3>Additionaly there are features:</h3>
-- New organisms can be added by hovering a tile and selecting a proper color as it appears (when tile is hovered colors will be changing constantly and by clicking in the right moment user can pick an organism to add).<br/>
-- World can be saved into a text file and loaded.<br/>
 
 <h3>More detailed description of organisms:</h3>
 Fox - will never move to a tile occupied by an organism with higher strength than his.<br/>
